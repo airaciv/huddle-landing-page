@@ -23,21 +23,21 @@ button {
   padding: 3% 7% 5% 7%;
 }
 
-.top-logo {
+.top-bar {
   align-items: center;
   display: flex;
   margin-bottom: 5%;
 }
 
-.top-logo img {
+.top-bar img {
   height: 30px;
 }
 
-.top-logo button {
+.top-bar button {
   background-color: #ffffff;
   border: none;
   border-radius: 60px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
   font-size: 0.8rem;
   font-weight: 600;
@@ -62,7 +62,7 @@ button {
   background-color: hsl(322, 100%, 66%);
   border: none;
   border-radius: 60px;
-  box-shadow: 2px 5px rgba(255, 82, 191, 0.1);
+  box-shadow: rgba(255, 82, 191, 0.2) 0px 8px 24px;
   cursor: pointer;
   color: white;
   font-size: 0.8rem;
@@ -79,3 +79,51 @@ button {
 }
 
 /********************* Middle Container *********************/
+.middle-container {
+  margin-top: 7%;
+  padding: 3% 8% 5% 8%;
+}
+
+.card {
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  margin-bottom: 3%;
+  height: 400px;
+}
+
+.card h2 {
+  margin-bottom: 0;
+}
+
+.card p {
+  color: hsl(208, 11%, 55%);
+  margin-top: 10px;
+}
+
+.card-description {
+  padding: 0 10%;
+  width: 40%;
+}
+
+.card-image {
+  margin: 4% 3% 4% auto;
+  width: 375px;
+}
+
+.card-image img {
+  max-width: 100%;
+}
+
+.card-image-left {
+  margin: 6% auto 6% 10%;
+  width: 500px;
+}
+
+.card-description-right {
+  padding: 0 2% 0 15%;
+  width: 55%;
+}
+
+/********************* Bottom Container *********************/
