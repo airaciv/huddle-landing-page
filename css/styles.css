@@ -47,10 +47,11 @@ button {
 
 .introduction {
   display: flex;
+  align-items: center;
 }
 
 .introduction-paragraph {
-  padding: 6% 5% 0 0;
+  padding-right: 5%;
 }
 
 .introduction-paragraph h1 {
@@ -69,8 +70,12 @@ button {
   padding: 15px 65px;
 }
 
-.introduction img {
-  height: 500px;
+.introduction-image {
+  width: 150%;
+}
+
+.introduction-image img {
+  max-width: 100%;
 }
 
 /********************* Middle Container *********************/
