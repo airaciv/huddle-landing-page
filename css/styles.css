@@ -14,6 +14,10 @@ button {
   font-family: "Open Sans", sans-serif;
 }
 
+footer {
+  color: white;
+}
+
 /********************* Top Container *********************/
 .top-container {
   background-color: hsl(193, 100%, 96%);
@@ -23,9 +27,10 @@ button {
   padding: 3% 7% 5% 7%;
 }
 
+/****** Top Bar ******/
 .top-bar {
-  align-items: center;
   display: flex;
+  align-items: center;
   margin-bottom: 5%;
 }
 
@@ -45,6 +50,7 @@ button {
   padding: 15px 65px;
 }
 
+/****** Introduction ******/
 .introduction {
   display: flex;
   align-items: center;
@@ -85,12 +91,13 @@ button {
 }
 
 .card {
+  display: flex;
   align-items: center;
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  display: flex;
-  margin-bottom: 3%;
   height: 400px;
+  margin-bottom: 3%;
+  padding: 2% 0;
 }
 
 .card h2 {
@@ -103,27 +110,84 @@ button {
 }
 
 .card-description {
+  flex: 1 1 40%;
   padding: 0 10%;
-  width: 40%;
 }
 
 .card-image {
-  margin: 4% 3% 4% auto;
-  width: 375px;
+  flex: 1 1 375px;
+  margin: 0 3% 0 auto;
 }
 
-.card-image img {
+.card-image img,
+.card-image-left img {
   max-width: 100%;
 }
 
 .card-image-left {
+  flex: 1 1 475px;
   margin: 6% auto 6% 10%;
-  width: 500px;
 }
 
 .card-description-right {
-  padding: 0 2% 0 15%;
-  width: 55%;
+  flex: 1 1 50%;
+  padding: 0 2% 0 13%;
 }
 
-/********************* Bottom Container *********************/
+/********************* Footer *********************/
+.footer-container {
+  background-color: hsl(192, 100%, 9%);
+  position: relative;
+}
+
+/****** CTA ******/
+.cta {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: black;
+  padding: 3% 9%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+.cta h2 {
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.cta button {
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  border-radius: 60px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 5px 0 15px 0;
+  padding: 25px 105px;
+}
+
+/****** Bottom Container ******/
+.bottom-container {
+  margin-top: 15%;
+  padding: 12% 8% 3%;
+}
+
+.info > img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4695%)
+    hue-rotate(291deg) brightness(112%) contrast(99%);
+  height: 40px;
+}
+
+.info > p img {
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.info > p img[alt="location"] {
+  padding-right: 7px;
+}
