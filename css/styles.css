@@ -46,6 +46,10 @@ button {
   padding: 15px 65px;
 }
 
+.top-bar button:hover {
+  color: hsl(208, 11%, 55%);
+}
+
 /****** Introduction ******/
 .introduction {
   display: flex;
@@ -70,6 +74,10 @@ button {
   font-size: 0.8rem;
   margin: 15px 0;
   padding: 15px 65px;
+}
+
+.introduction-paragraph button:hover {
+  background-color: hsl(322, 100%, 80%);
 }
 
 .introduction-image {
@@ -169,6 +177,10 @@ button {
   padding: 25px 105px;
 }
 
+.cta button:hover {
+  background-color: hsl(322, 100%, 80%);
+}
+
 /****** Bottom Container ******/
 .bottom-container {
   display: flex;
@@ -203,6 +215,7 @@ button {
 .link {
   display: flex;
   flex: 1 1 100px;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 8px;
 }
@@ -218,14 +231,22 @@ button {
   text-decoration: none;
 }
 
+.link a:hover {
+  text-decoration: underline;
+}
+
 /**** Social Section ****/
 .social {
   flex: 1;
-  margin: 18px 0 0 150px;
+  margin: 18px 0 0 15%;
 }
 
 .social span {
-  margin-right: 5px;
+  margin: 0 5px 15px 0;
+}
+
+.social span:hover {
+  color: hsl(322, 100%, 66%);
 }
 
 /********************* Footer *********************/
@@ -250,4 +271,8 @@ footer p {
 footer a {
   color: hsl(322, 100%, 66%);
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
