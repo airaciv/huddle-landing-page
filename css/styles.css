@@ -14,10 +14,6 @@ button {
   font-family: "Open Sans", sans-serif;
 }
 
-footer {
-  color: white;
-}
-
 /********************* Top Container *********************/
 .top-container {
   background-color: hsl(193, 100%, 96%);
@@ -134,9 +130,11 @@ footer {
   padding: 0 2% 0 13%;
 }
 
-/********************* Footer *********************/
-.footer-container {
+/********************* Bottom Section *********************/
+.bottom-section {
   background-color: hsl(192, 100%, 9%);
+  color: white;
+  margin-top: 20%;
   position: relative;
 }
 
@@ -171,18 +169,18 @@ footer {
   padding: 25px 105px;
 }
 
-.footer-container > img {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4695%)
-    hue-rotate(291deg) brightness(112%) contrast(99%);
-  height: 40px;
-  margin: 15% 0 0 8%;
-}
-
 /****** Bottom Container ******/
 .bottom-container {
   display: flex;
   font-weight: 300;
   padding: 1% 8% 3%;
+}
+
+.bottom-section > img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4695%)
+    hue-rotate(291deg) brightness(112%) contrast(99%);
+  height: 40px;
+  margin: 15% 0 0 8%;
 }
 
 /**** Info Section ****/
@@ -230,11 +228,26 @@ footer {
   margin-right: 5px;
 }
 
-.social p {
+/********************* Footer *********************/
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
   font-size: 0.8rem;
+  font-weight: 300;
+  padding-bottom: 4%;
 }
 
-.social a {
+footer div {
+  padding-right: 60px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
   color: hsl(322, 100%, 66%);
   text-decoration: none;
 }
