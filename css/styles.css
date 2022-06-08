@@ -226,10 +226,8 @@ footer {
   margin: 18px 0 0 150px;
 }
 
-.social i {
-  height: 0.5rem;
-  width: 0.5rem;
-  margin: 3px;
+.social span {
+  margin-right: 5px;
 }
 
 .social p {
@@ -240,5 +238,3 @@ footer {
   color: hsl(322, 100%, 66%);
   text-decoration: none;
 }
-
-/* need to change font awesome */
