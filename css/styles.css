@@ -245,11 +245,19 @@ button {
   margin: 18px 0 0 15%;
 }
 
-.social span {
-  margin: 0 5px 15px 0;
+.social div {
+  border: solid 1px white;
+  border-radius: 50%;
+  display: inline-block;
+  height: 1.8rem;
+  width: 2rem;
+  margin: 0 10px 15px 0;
+  padding-top: 0.2rem;
+  text-align: center;
 }
 
-.social span:hover {
+.social div:hover {
+  border-color: hsl(322, 100%, 66%);
   color: hsl(322, 100%, 66%);
 }
 
