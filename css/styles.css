@@ -186,19 +186,19 @@ button {
   padding: 0 14% 0 8%;
 }
 
+.bottom-section > img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4695%)
+    hue-rotate(291deg) brightness(112%) contrast(99%);
+  height: 2.5rem;
+  margin-top: 12rem;
+}
+
 /****** Bottom Container ******/
 .bottom-container {
   display: flex;
   gap: 12%;
   font-weight: 300;
   padding: 1% 0 3%;
-}
-
-.bottom-section > img {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4695%)
-    hue-rotate(291deg) brightness(112%) contrast(99%);
-  height: 2.5rem;
-  margin-top: 12rem;
 }
 
 /**** Info Section ****/
@@ -234,6 +234,7 @@ button {
 .link-column {
   display: flex;
   flex-direction: column;
+  min-width: 165px;
 }
 
 .link a {
@@ -257,8 +258,8 @@ button {
   display: inline-block;
   height: 1.8rem;
   width: 2rem;
-  margin: 0 0.625rem 1rem 0;
-  padding-top: 0.2rem;
+  margin: 0 0.7rem 1rem 0;
+  padding: 0.3rem 0.1rem 0;
   text-align: center;
 }
 
@@ -271,15 +272,14 @@ button {
 footer {
   background-color: hsl(192, 100%, 9%);
   color: white;
-  display: flex;
-  justify-content: flex-end;
   font-size: 0.8rem;
   font-weight: 300;
-  padding-bottom: 4%;
+  overflow: hidden;
 }
 
 footer div {
-  padding-right: 3.75rem;
+  float: right;
+  padding: 0 5rem 4rem 0;
 }
 
 footer p {
@@ -397,7 +397,45 @@ footer a:hover {
   }
 
   /*********** Bottom Section ***********/
+  .bottom-section {
+    padding: 0 8% 0 5%;
+  }
+
+  .bottom-section > img {
+    height: 1.6rem;
+    margin-top: 8rem;
+  }
+
   .bottom-container {
     flex-direction: column;
+  }
+
+  .info {
+    margin-bottom: 1.8rem;
+  }
+
+  .link a {
+    margin-left: 0;
+  }
+
+  .social {
+    margin-top: 2.2rem;
+    text-align: center;
+  }
+
+  .social div {
+    padding-top: 0.4rem;
+  }
+
+  /*********** Footer ***********/
+  footer {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  footer div {
+    float: none;
+    padding: 0 0 3rem;
+    text-align: center;
   }
 }
