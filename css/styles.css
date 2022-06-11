@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0;
 }
 
@@ -32,7 +32,7 @@ button {
 }
 
 .top-bar img {
-  height: 30px;
+  height: 1.875rem;
 }
 
 .top-bar button {
@@ -44,7 +44,7 @@ button {
   font-size: 0.8rem;
   font-weight: 600;
   margin-left: auto;
-  padding: 15px 65px;
+  padding: 0.9rem 4.1rem;
 }
 
 .top-bar button:hover {
@@ -58,7 +58,7 @@ button {
 }
 
 .introduction-paragraph {
-  padding-right: 5%;
+  margin-right: 5%;
 }
 
 .introduction-paragraph h1 {
@@ -73,8 +73,8 @@ button {
   cursor: pointer;
   color: white;
   font-size: 0.8rem;
-  margin: 15px 0;
-  padding: 15px 65px;
+  margin: 1rem 0;
+  padding: 1.1rem 4.1rem;
 }
 
 .introduction-paragraph button:hover {
@@ -92,7 +92,7 @@ button {
 /********************* Middle Container *********************/
 .middle-container {
   margin-top: 7%;
-  padding: 3% 8% 5% 8%;
+  padding: 3% 8% 5%;
 }
 
 .card {
@@ -111,12 +111,12 @@ button {
 
 .card p {
   color: hsl(208, 11%, 55%);
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .card-description {
   flex: 1 1 40%;
-  padding: 0 10%;
+  margin: 0 10%;
 }
 
 .card-image {
@@ -136,7 +136,7 @@ button {
 
 .card-description-right {
   flex: 1 1 50%;
-  padding: 0 2% 0 13%;
+  margin: 0 2% 0 13%;
 }
 
 /********************* CTA *********************/
@@ -155,11 +155,11 @@ button {
   text-align: center;
   transform: translate(0, 35%);
   width: 800px;
+  padding: 3.5% 0 5%;
 }
 
 .cta h2 {
   font-size: 2rem;
-  margin-top: 8%;
 }
 
 .cta button {
@@ -171,8 +171,8 @@ button {
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 10px 0 7%;
-  padding: 25px 105px;
+  margin-top: 0.5rem;
+  padding: 1.6rem 6.5rem;
 }
 
 .cta button:hover {
@@ -183,34 +183,35 @@ button {
 .bottom-section {
   background-color: hsl(192, 100%, 9%);
   color: white;
+  padding: 0 14% 0 8%;
 }
 
 /****** Bottom Container ******/
 .bottom-container {
   display: flex;
+  gap: 12%;
   font-weight: 300;
-  padding: 1% 8% 3%;
+  padding: 1% 0 3%;
 }
 
 .bottom-section > img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4695%)
     hue-rotate(291deg) brightness(112%) contrast(99%);
-  height: 40px;
-  margin: 15% 0 0 8%;
+  height: 2.5rem;
+  margin-top: 12rem;
 }
 
 /**** Info Section ****/
 .info {
   display: flex;
-  flex: 1 1 175px;
-  margin-right: 10%;
+  flex: 1 1 200px;
 }
 
 .info div {
   display: grid;
   align-items: center;
   grid-template: repeat(3, auto) / repeat(2, auto);
-  grid-column-gap: 15px;
+  grid-column-gap: 1rem;
 }
 
 .info p {
@@ -224,10 +225,10 @@ button {
 /**** Link Section ****/
 .link {
   display: flex;
-  flex: 1 1 100px;
+  flex: 1 1 125px;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 8px;
+  padding-top: 0.5rem;
 }
 
 .link-column {
@@ -237,7 +238,7 @@ button {
 
 .link a {
   color: white;
-  margin: 10px;
+  margin: 0.625rem;
   text-decoration: none;
 }
 
@@ -247,8 +248,7 @@ button {
 
 /**** Social Section ****/
 .social {
-  flex: 1;
-  margin: 18px 0 0 15%;
+  padding-top: 0.8rem;
 }
 
 .social div {
@@ -257,7 +257,7 @@ button {
   display: inline-block;
   height: 1.8rem;
   width: 2rem;
-  margin: 0 10px 15px 0;
+  margin: 0 0.625rem 1rem 0;
   padding-top: 0.2rem;
   text-align: center;
 }
@@ -279,7 +279,7 @@ footer {
 }
 
 footer div {
-  padding-right: 60px;
+  padding-right: 3.75rem;
 }
 
 footer p {
@@ -297,29 +297,52 @@ footer a:hover {
 
 /********************* Media Query *********************/
 @media screen and (max-width: 702px) {
+  body {
+    font-size: 1rem;
+  }
+
   /*********** Top Container ***********/
   .top-container {
     background-image: url(../images/bg-hero-mobile.svg);
-    padding-top: 7%;
+    padding: 6% 5%;
   }
 
+  /****** Top Bar ******/
+  .top-bar img {
+    height: 1rem;
+  }
+
+  .top-bar button {
+    font-size: 0.7rem;
+    padding: 0.3rem 1.6rem;
+  }
+
+  /****** Introduction ******/
   .introduction {
     flex-wrap: wrap;
     text-align: center;
     margin: 20% 5% 0;
   }
 
+  .introduction-paragraph {
+    margin: 0;
+  }
+
+  .introduction-paragraph h1 {
+    font-size: 1.5rem;
+  }
+
+  .introduction-paragraph button {
+    padding: 0.625rem 3.75rem;
+  }
+
   .introduction-image {
     margin: 15% 0 5%;
   }
 
-  .top-bar button {
-    font-size: 1rem;
-  }
-
   /*********** Middle Container ***********/
   .middle-container {
-    margin-top: 10%;
+    padding: 8% 5% 5%;
     text-align: center;
   }
 
@@ -331,26 +354,46 @@ footer a:hover {
     margin-bottom: 12%;
   }
 
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
   .card-image,
   .card-image-left {
     flex: 1;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 12%;
   }
 
   .card-description,
   .card-description-right {
     order: 1;
-    margin: 0 12%;
-    padding: 0 0 7% 0;
+    margin: 0 10%;
+    padding: 0 0 4% 0;
   }
 
   .card h2 {
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
   }
 
   /*********** CTA ***********/
-  .cta div {
+  .cta {
+    padding: 0 3%;
+  }
+
+  .cta h2 {
+    font-size: 1.125rem;
+    margin-top: 1.9rem;
+  }
+
+  .cta button {
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 3.2rem;
   }
 
   /*********** Bottom Section ***********/
