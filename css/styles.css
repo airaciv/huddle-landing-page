@@ -234,7 +234,7 @@ button {
 .link-column {
   display: flex;
   flex-direction: column;
-  min-width: 165px;
+  min-width: 120px;
 }
 
 .link a {
